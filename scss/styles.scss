@@ -1,0 +1,62 @@
+@import "base/mixins";
+@import "base/extend";
+@import "md.scss";
+
+
+/*pagina numero uno*/
+/*estilos por defecto*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*fondo*/  
+body{
+    background-image: url(../img/imagendeamigos.jpg);
+    background-size: cover;
+   
+}
+  
+/*titulo*/
+header{
+    @include flex;
+    div h1{
+        @extend %titulo;
+    }
+}
+
+/*boton*/
+.boton{
+    @include boton;
+    transform: scale(1.1);
+    
+    ul li{
+        @extend %botonn;
+    }
+    ul li a{
+        @extend %boton2;
+    }
+
+}
+
+.boton:hover{
+    transform: scale(1.5);
+
+}
+/*subtitulo*/
+.blog{
+    @extend %blog;
+    h2{
+        @extend %blog2;
+    }
+}
+
+/*footer*/
+footer{
+   @include footer;   
+   div{
+       @extend %footer;
+   }
+}
+

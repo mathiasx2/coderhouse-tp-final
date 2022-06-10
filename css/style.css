@@ -1,0 +1,78 @@
+/*blog*/
+.blog {
+  text-align: center;
+  color: #140101;
+  font-family: 'Dancing Script', cursive; }
+
+/*footer*/
+footer div {
+  font-size: 20px;
+  font-weight: 60px;
+  background-color: antiquewhite; }
+
+/*titulo*/
+header div h1 {
+  font-size: 100px;
+  margin: 50px;
+  color: black;
+  font-family: 'Dancing Script', cursive; }
+
+/*boton*/
+.boton ul li {
+  list-style-type: none; }
+
+.boton ul li a {
+  text-decoration: none;
+  color: #3b5050;
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive; }
+
+/*blog*/
+.blog h2 {
+  font-size: 80px; }
+
+.mainp {
+  display: grid;
+  grid-template-areas: "titulo" "boton" "blog"; }
+
+header {
+  grid-area: titulo; }
+
+.boton {
+  grid-area: boton; }
+
+.blog {
+  grid-area: blog; }
+
+/*pagina numero uno*/
+/*estilos por defecto*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*fondo*/
+body {
+  background-image: url(../img/imagendeamigos.jpg);
+  background-size: cover; }
+
+/*titulo*/
+header {
+  display: flex;
+  justify-content: center; }
+
+/*boton*/
+.boton {
+  display: flex;
+  justify-content: center;
+  transform: scale(1.1); }
+
+.boton:hover {
+  transform: scale(1.5); }
+
+/*subtitulo*/
+/*footer*/
+footer {
+  height: 200px;
+  display: grid;
+  align-items: flex-end; }

@@ -1,0 +1,19 @@
+
+//titulo
+@mixin flex{
+    display: flex;
+    justify-content: center;
+
+}
+//boton
+@mixin boton {
+    display: flex;
+    justify-content: center;
+    
+}
+//footer
+@mixin footer {
+    height: 200px;
+    display: grid;
+    align-items: flex-end;
+}

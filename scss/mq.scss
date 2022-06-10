@@ -1,0 +1,23 @@
+.mainp{
+    display: grid;
+    grid-template-areas: "titulo"
+                         "boton"
+                         "blog";
+}
+
+header{
+    grid-area: titulo;
+    
+}
+
+.boton{
+    grid-area: boton;
+}
+
+.blog{
+    grid-area: blog;
+}
+
+
+
+
