@@ -1,48 +1,237 @@
-/*blog*/
+@charset "UTF-8";
+/*GRID DE PAGE LUNA*/
+.luna {
+  grid-area: luna; }
+  .luna h3 {
+    font-size: 3rem;
+    background: linear-gradient(to top, #a8977f, #ff9100);
+    -webkit-background-clip: text;
+    -clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Lobster', cursive; }
+
+.imagenLuna {
+  grid-area: imagenLuna; }
+
+.informacion {
+  grid-area: informacion;
+  background: linear-gradient(to top, white, #ff943c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Lobster', cursive; }
+
+/*SUBTITULO DEL INDEX*/
 .blog {
   text-align: center;
-  color: #140101;
-  font-family: 'Dancing Script', cursive; }
+  background: linear-gradient(to top, white, yellow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Lobster', cursive;
+  animation-name: letra;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
 
-/*footer*/
+@keyframes letra {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.3); } }
+
+/*FOOTER DEL INDEX*/
 footer div {
   font-size: 20px;
   font-weight: 60px;
-  background-color: antiquewhite; }
+  color: burlywood; }
 
-/*titulo*/
+/*TITULO DEL INDEX*/
 header div h1 {
   font-size: 100px;
   margin: 50px;
-  color: black;
-  font-family: 'Dancing Script', cursive; }
+  background: linear-gradient(to top, white, yellow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Lobster', cursive;
+  animation-name: letra-grande;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
 
-/*boton*/
+@keyframes letra-grande {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.3); } }
+
+/*BOTON DEL INDEX*/
 .boton ul li {
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 50px;
+  position: relative;
+  display: inline-block;
+  padding: 15px, 30px;
+  letter-spacing: 6px;
+  transition: 0.2s; }
 
 .boton ul li a {
   text-decoration: none;
-  color: #3b5050;
-  font-size: 50px;
-  font-family: 'Dancing Script', cursive; }
+  background: linear-gradient(to top, white, yellow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  padding: 15px 30px;
+  transition: 0.2s;
+  font-family: 'Lobster', cursive; }
 
-/*blog*/
+.boton ul li:hover {
+  background: violet;
+  box-shadow: 0 0 10px violet, 0 0 40px violet,  0 0 80px violet;
+  transition-delay: 0.5s; }
+
+.boton ul li span {
+  position: absolute;
+  display: block; }
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, violet); }
+
+.boton ul li:hover #span1 {
+  left: 100%;
+  transition: 1s; }
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, violet); }
+
+.boton ul li:hover #span3 {
+  right: 100%;
+  transition: 1s; }
+
+/*TAMAÑO DEL SUBTITULO DEL INDEX*/
 .blog h2 {
-  font-size: 80px; }
+  font-size: 60px; }
 
-.mainp {
-  display: grid;
-  grid-template-areas: "titulo" "boton" "blog"; }
+/*SEGUNDO FONDO DE PAGE LUNA*/
+.fondogalaxia {
+  background-image: url(../../img/fondodelespacio.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
 
-header {
-  grid-area: titulo; }
+/*MENU DE PAGE LUNA*/
+.menusito div h2 a {
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  transition: 0.2s; }
 
-.boton {
-  grid-area: boton; }
+.menusito div h2 a:hover {
+  background: violet;
+  box-shadow: 0 0 10px violet, 0 0 40px violet,  0 0 80px violet; }
 
-.blog {
-  grid-area: blog; }
+/*titulo de luna */
+.segundoTitulo h1 {
+  font-size: 2rem;
+  height: 10vh; }
+
+/*animacion de luna*/
+main .imagenLuna {
+  animation-name: luna-gira;
+  animation-duration: 180s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+@keyframes luna-gira {
+  from {
+    transform: rotate(360deg); }
+  to {
+    transform: rotate 360deg; } }
+
+/*page de formulario parte de info*/
+.cartaNatal {
+  background: linear-gradient(to top, #a8977f, #ff9100);
+  -webkit-background-clip: text;
+  -clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Lobster', cursive;
+  box-shadow: 0 0 10px violet, 0 0 40px violet,  0 0 80px violet;
+  transition-delay: 0.5s; }
+
+/* page de formulario parte del formulario*/
+.formulita {
+  color: #c78f17;
+  font-family: 'Lobster', cursive;
+  box-shadow: 0 0 10px violet, 0 0 40px violet,  0 0 80px violet;
+  transition-delay: 0.5s; }
+
+/*ANIMACION DE SATURNO*/
+@keyframes imagen-escala {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+
+@media screen and (max-width: 1200px) {
+  .contenedor-principal {
+    height: 100vh;
+    background-size: 100% 100%; }
+    .contenedor-principal div h1 {
+      font-size: 50px; }
+    .contenedor-principal div h2 {
+      font-size: 40px; }
+    .contenedor-principal nav ul li a {
+      font-size: 35px; } }
+
+@media screen and (max-width: 600px) {
+  .contenedor-principal {
+    height: 100vh;
+    background-size: 100% 100%; }
+    .contenedor-principal div h1 {
+      font-size: 50px; }
+    .contenedor-principal div h2 {
+      font-size: 40px; }
+    .contenedor-principal nav ul li a {
+      font-size: 35px; } }
+
+@media screen and (max-width: 480px) {
+  .contenedor-principal {
+    height: 100vh;
+    background-size: 100% 100%; }
+    .contenedor-principal div h1 {
+      font-size: 40px; }
+    .contenedor-principal div h2 {
+      font-size: 35px; }
+    .contenedor-principal nav ul li a {
+      font-size: 30px; } }
+
+/*MEDIA QUERIES DE PAGE LUNA*/
+@media screen and (min-width: 600px) {
+  .caja {
+    padding: 1rem;
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "imagenLuna luna" "imagenLuna informacion"; }
+  .informacion {
+    overflow: auto; }
+  .imagenLuna {
+    padding: 30%; } }
+
+@media screen and (min-width: 1024px) {
+  .caja {
+    display: grid;
+    grid-template-areas: "imagenLuna luna" "imagenLuna informacion"; } }
 
 /*pagina numero uno*/
 /*estilos por defecto*/
@@ -51,28 +240,43 @@ header {
   padding: 0;
   box-sizing: border-box; }
 
-/*fondo*/
-body {
-  background-image: url(../img/imagendeamigos.jpg);
-  background-size: cover; }
+/*FONDO DEL INDEX*/
+.contenedor-principal {
+  background-image: url(../img/atroboyyy.jpg);
+  height: 100vh;
+  background-size: 100% 100%; }
 
-/*titulo*/
+/*TITULO DEL INDEX*/
 header {
   display: flex;
   justify-content: center; }
 
-/*boton*/
+/*BOTON DEL INDEX*/
 .boton {
   display: flex;
-  justify-content: center;
-  transform: scale(1.1); }
+  justify-content: center; }
 
-.boton:hover {
-  transform: scale(1.5); }
-
-/*subtitulo*/
-/*footer*/
+/*SUBTITULO DEL INDEX*/
+/*FOOTER DEL INDEX*/
 footer {
-  height: 200px;
+  height: 50px;
+  display: flex; }
+
+/*htmllllllllllll LUNA*/
+/*FONDO DE PAGE LUNA*/
+/*MENU DE NAVEGACION DE PAGE LUNA*/
+.menusito div h2 a {
+  color: #db47b6;
+  text-decoration: none; }
+
+/*TITULO DE PAGE LUNA*/
+/*MAIN DE PAGE LUNA*/
+main {
+  padding: 1.5rem;
+  height: 150vh;
+  gap: 50px;
   display: grid;
-  align-items: flex-end; }
+  grid-template-areas: "luna" "imagenLuna" "informacion";
+  justify-items: center; }
+
+/*html formularioooooooo*/

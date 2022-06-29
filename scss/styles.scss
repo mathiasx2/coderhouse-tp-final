@@ -1,6 +1,7 @@
 @import "base/mixins";
 @import "base/extend";
-@import "md.scss";
+@import "medias";
+@import "base/variables";
 
 
 /*pagina numero uno*/
@@ -11,14 +12,15 @@
     box-sizing: border-box;
 }
 
-/*fondo*/  
-body{
-    background-image: url(../img/imagendeamigos.jpg);
-    background-size: cover;
-   
+
+/*FONDO DEL INDEX*/  
+.contenedor-principal{
+    background-image: url(../img/atroboyyy.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
 }
   
-/*titulo*/
+/*TITULO DEL INDEX*/
 header{
     @include flex;
     div h1{
@@ -26,25 +28,18 @@ header{
     }
 }
 
-/*boton*/
+/*BOTON DEL INDEX*/
 .boton{
     @include boton;
-    transform: scale(1.1);
-    
     ul li{
         @extend %botonn;
     }
     ul li a{
         @extend %boton2;
     }
-
 }
 
-.boton:hover{
-    transform: scale(1.5);
-
-}
-/*subtitulo*/
+/*SUBTITULO DEL INDEX*/
 .blog{
     @extend %blog;
     h2{
@@ -52,11 +47,60 @@ header{
     }
 }
 
-/*footer*/
+/*FOOTER DEL INDEX*/
 footer{
    @include footer;   
    div{
        @extend %footer;
    }
 }
+
+
+/*htmllllllllllll LUNA*/
+
+/*FONDO DE PAGE LUNA*/
+.fondogalaxia{
+    @extend %fondo;
+    
+}
+
+/*MENU DE NAVEGACION DE PAGE LUNA*/
+.menusito{
+    div h2 a{
+        color: $color-principal;
+        text-decoration: $subrayado-principal;
+        @extend %menusito;
+    }
+}
+
+
+/*TITULO DE PAGE LUNA*/
+.segundoTitulo{
+    h1{
+        @extend %segundoTitulo;
+    }
+}
+
+/*MAIN DE PAGE LUNA*/
+main{
+    @include caja;
+    .imagenLuna{
+        @extend %imagenLuna
+    }
+} 
+
+/*html formularioooooooo*/
+
+.cartaNatal{
+    @extend %cartaNatal;
+}
+
+.formulita{
+    @extend %formulita
+    
+}
+
+
+
+
 

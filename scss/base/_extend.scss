@@ -1,38 +1,229 @@
-/*blog*/
+/*SUBTITULO DEL INDEX*/
 %blog{
     text-align:center;
-    
-    color: #140101;
-    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(to top, white, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Lobster', cursive;
+    animation-name: letra;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
 }
-/*footer*/
+
+@keyframes letra{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
+
+
+/*FOOTER DEL INDEX*/
 %footer{
     font-size: 20px;
     font-weight: 60px;
+    color: burlywood;
     
 }
 
-/*titulo*/
+/*TITULO DEL INDEX*/
 %titulo{
     font-size: 100px;
     margin: 50px;
-    color:rgb(0, 0, 0);
-    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(to top, white, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Lobster', cursive;
+    animation-name: letra-grande;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
 }
 
-/*boton*/
+@keyframes letra-grande{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
+
+/*BOTON DEL INDEX*/
 %botonn{
     list-style-type: none;
+    margin: 50px;
+    position: relative;
+    display: inline-block;
+    padding: 15px, 30px;
+    letter-spacing: 6px;
+    transition: 0.2s;
+    
 }
 
 %boton2{
     text-decoration: none;
-    color: rgb(59, 80, 80);
-    font-size: 50px;
-    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(to top, white, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    padding: 15px 30px;
+    transition:0.2s;
+    font-family: 'Lobster', cursive;
+
 }
 
-/*blog*/
-%blog2{
-    font-size: 80px;
+%botonn:hover{
+    background: violet;
+    box-shadow: 0 0 10px violet, 0 0 40px violet, 
+    0 0 80px violet;
+    transition-delay: 0.5s;
 }
+
+%botonn span{
+    position: absolute;
+    display: block;
+}
+
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,violet);
+}
+
+%botonn:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,violet);
+}
+
+%botonn:hover #span3{
+    right: 100%;
+    transition: 1s;
+}
+
+/*TAMAÑO DEL SUBTITULO DEL INDEX*/
+%blog2{
+    font-size: 60px;
+}
+
+//html222222222222222222222222222222222222222222222222222
+/*SEGUNDO FONDO DE PAGE LUNA*/
+%fondo{
+    background-image: url(../../img/fondodelespacio.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*MENU DE PAGE LUNA*/
+%menusito{
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+%menusito:hover{
+    background: violet;
+    box-shadow: 0 0 10px violet, 0 0 40px violet, 
+    0 0 80px violet;
+}
+
+/*titulo de luna */
+%segundoTitulo{
+    font-size: 2rem;
+    height: 10vh;
+}
+
+
+/*animacion de luna*/
+
+%imagenLuna{
+    animation-name: luna-gira;
+    animation-duration: 180s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    
+}    
+
+@keyframes luna-gira{
+    from{
+        transform: rotate(360deg);
+    }
+
+    to{
+        transform: rotate (360deg);
+    }
+}
+
+/*page de formulario parte de info*/
+
+ %cartaNatal{
+        background: linear-gradient(to top, rgb(168, 151, 127), rgb(255, 145, 0));
+        -webkit-background-clip: text;
+        -clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Lobster', cursive;
+        
+        box-shadow: 0 0 10px violet, 0 0 40px violet, 
+        0 0 80px violet;
+        transition-delay: 0.5s;
+
+ }
+
+ /* page de formulario parte del formulario*/
+
+ %formulita{
+        color: rgb(199, 143, 23);
+        font-family: 'Lobster', cursive;
+        box-shadow: 0 0 10px violet, 0 0 40px violet, 
+        0 0 80px violet;
+        transition-delay: 0.5s;
+ }
+
+ /*ANIMACION DE SATURNO*/
+
+ %cajaSaturno{
+    animation-name: imagen-escala;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes imagen-escala{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+
+
+
+
+
